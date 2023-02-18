@@ -10,7 +10,7 @@ void draw()
 {
   strokeWeight(0);
   fill(255,255,255,50);
-  rect(0,0,1000,1000);
+  //rect(0,0,1000,1000);
   if(on)
   {
     ten = new tendron((int)(400+Math.random()*200),((int)(400+Math.random()*200)));

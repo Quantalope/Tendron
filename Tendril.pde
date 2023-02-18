@@ -5,7 +5,7 @@ void setup()
 translate(500,500);
   size(1000,1000);
   fill(255);
-  rect(,,1000,1000);
+  rect(0,0,1000,1000);
 }
 void draw()
 {

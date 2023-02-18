@@ -8,7 +8,7 @@ void setup()
 }
 void draw()
 {
-  strokeWeight(0);
+  stroke(255);
   fill(255,255,255,50);
   //rect(0,0,1000,1000);
   if(on)

@@ -21,8 +21,8 @@ void draw()
 void mousePressed()
 {
   ten = new tendron(mouseX,mouseY);
-  translate(-mouseX,-mouseY);
   ten.cluster(600);
+  translate(-mouseX,-mouseY);
 }
 void keyPressed()
 {

@@ -1,21 +1,37 @@
-class Tendril
+tendron ten;
+boolean on = false;
+void setup()
 {
-  public final static int SEG_LENGTH = 4; //length of each segment in the tendril
-  private int myNumSegments, myX, myY;
-  private double myAngle;
-  
-  /**
-   Class constructor
-   len is how many segments in this tendril (each a fixed length, 4 is a good start)
-   theta is tendril starting angle in radians 
-   x, y  is the starting (x,y) coordinate
-   */
-  public Tendril(int len, double theta, int x, int y)
+  size(1000,1000);
+  fill(255);
+  rect(0,0,1000,1000);
+  frameRate(5);
+}
+void draw()
+{
+  strokeWeight(0);
+  fill(255,255,255,50);
+  rect(0,0,1000,1000);
+  if(on)
   {
-    //your code here
+    ten = new tendron((int)(400+Math.random()*200),((int)(400+Math.random()*200)));
+    ten.cluster(600);
   }
-  public void show()
+}
+void mousePressed()
+{
+  ten = new tendron((int)mouseX,(int)mouseY);
+  ten.cluster(600);
+  System.out.println(mouseX);
+}
+void keyPressed()
+{
+  if(!on)
   {
-    //your code here
+    on = true;
+  }
+  else
+  {
+    on = false;
   }
 }

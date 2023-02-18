@@ -22,7 +22,6 @@ void mousePressed()
 {
   ten = new tendron((int)mouseX,(int)mouseY);
   ten.cluster(600);
-  System.out.println(mouseX);
 }
 void keyPressed()
 {
